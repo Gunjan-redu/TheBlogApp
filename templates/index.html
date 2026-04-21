@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+		{% block body %}
+
+
+					<!-- Main -->
+						<div id="main">
+
+							<!-- Post -->
+							{% for post in posts %}
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2><a href="single.html">{{post.title}}</a></h2>
+											<p>{{post.location}}</p>
+										</div>
+										<div class="meta">
+											<time class="published" datetime="2015-11-01">{{post.date_posted}}</time>
+											<a href="#" class="author"><span class="name">{{post.author}}</span><img src="images/avatar.jpg" alt="" /></a>
+										</div>
+									</header>
+									<a href="post.html" class="image featured"><img src="{{post.image}}" alt="" /></a>
+									<p>{{post.sub_title}}</p>
+									<footer>
+										<ul class="actions">
+											<li><a href="/post/{{post.slug}}" class="button large">Continue Reading</a></li>
+										</ul>
+										<ul class="stats">
+											<li><a href="#">General</a></li>
+											<li><a href="#" class="icon solid fa-heart">28</a></li>
+											<li><a href="#" class="icon solid fa-comment">128</a></li>
+										</ul>
+									</footer>
+								</article>
+							{% endfor %}
+							<!-- Pagination -->
+							<ul class="actions pagination">
+								<li><a href="{{prev}}" class="button large previous">Previous Page</a></li>
+								<li><a href="{{next}}" class="button large next">Next Page</a></li>
+							</ul>
+						</div>
+
+					<!-- Footer -->
+
+
+
+		{% endblock %}

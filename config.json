@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "local_server": false,
+    "local_uri": "mysql+pymysql://root:@localhost/blog1",
+    "prod_uri": "postgresql://blogapp_yk3q_user:5WmXzEwWqk1H1sUArDK1Rx2p1GJ1XYJX@dpg-d7ic9cvavr4c73fipqk0-a.virginia-postgres.render.com/blogapp_yk3q",
+    "secret_key": "randomsecret"
+
+  }
+}
