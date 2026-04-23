@@ -3647,5 +3647,15 @@ form label{
     width: 100%;
     flex-basis: 100%;
     order: 3;
-    background: red;
+    text-align:center;
+}
+
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+#main {
+    flex: 1;
 }
